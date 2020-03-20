@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SignalR Chat Pure Websocket Client</title>
+  
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+
+    <h1>Welcome to SignalR Chat Pure Websocket</h1>
+    <button onclick="window.history.back()">Go Back</button>
+
+    <h3>Nickname:</h3>
+    <input type="text" id="nickname" />
+
+    <h3>Write a message:</h3>
+    <textarea id="message-box" rows="4" cols="50"></textarea>
+    <button type="button" id="send-button">Send</button>
+    <select id="group-select">
+    </select>
+    <button type="button" id="toggle-private-group">Join private group</button>
+
+    <h3>Chat:</h3>
+    <div id="chat-box"></div>
+
+    <h3>Activity Log:</h3>
+    <div id="activity-log-box"></div>
+
+    <script type="text/javascript" src="signalr-chat-websocket.js"></script>
+</body>
+</html>

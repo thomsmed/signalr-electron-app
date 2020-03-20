@@ -1,0 +1,28 @@
+{
+  "name": "signalr-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "Thomas Asheim Smedmann",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.thomsmed.signalr",
+    "mac": {
+      "category": "public.app-category.entertainment"
+    }
+  },
+  "devDependencies": {
+    "electron": "^8.1.1",
+    "electron-builder": "^22.4.1"
+  },
+  "dependencies": {
+    "@aspnet/signalr": "^1.1.4"
+  }
+}
